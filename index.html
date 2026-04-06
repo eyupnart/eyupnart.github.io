@@ -4,130 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eyüp Nart</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    html {
-    scroll-behavior: smooth;
-        }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background: rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(10px);
-    }
-
-    header h1 {
-      font-weight: 600;
-    }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: 400;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #00d4ff;
-    }
-
-    .hero {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin-bottom: 25px;
-      opacity: 0.9;
-    }
-
-    .btn {
-      padding: 12px 25px;
-      border: none;
-      border-radius: 30px;
-      background: #00d4ff;
-      color: #000;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #00aacc;
-      transform: scale(1.05);
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px 50px;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      padding: 25px;
-      backdrop-filter: blur(10px);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: rgba(0, 0, 0, 0.2);
-      font-size: 0.9rem;
-    }
-
-    @media(max-width: 600px) {
-      header {
-        flex-direction: column;
-      }
-
-      nav {
-        margin-top: 10px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body id="anaSayfa">
 
   <header>
     <h1>Eyüp Nart</h1>
@@ -145,7 +27,7 @@
       Ben Eyüp Nart. Yazılım, spor ve içerik üretimi ile ilgileniyorum. 
       Kendi projelerimi geliştiriyor ve dijital dünyada kendimi büyütmeye çalışıyorum.
     </p>
-    <button class="btn">Projelerime Göz At</button>
+    <a href="#projeler" class="btn">Projelerime Göz At</a>
   </section>
 
   <section class="cards">
@@ -165,53 +47,33 @@
     </div>
   </section>
 
-    <section id="hakkimda" class="cards">
-        <div class="card">
-            <h3>👤 Hakkımda</h3>
-            <p>Bilgisayar programcılığı eğitimi aldım...</p>
-        </div>
-    </section>
-
-    <section id="projeler" class="cards">
-        <div class="card">
-            <h3>🚀 Proje 1</h3>
-            <p>Unity ile geliştirdiğim bir oyun projesi.</p>
-        </div>
-
-        <div class="card">
-            <h3>🌐 Proje 2</h3>
-            <p>HTML/CSS ile yaptığım kişisel web sitesi.</p>
-        </div>
-    </section>
-
-
-  <section class="cards" id="cv">
+  <section id="hakkimda" class="cards">
     <div class="card">
       <h3>👤 Hakkımda</h3>
-      <p>Bilgisayar programcılığı eğitimi aldım ve yazılım alanında kendimi geliştirmeye devam ediyorum. E-ticaret operasyonları, lojistik süreçler ve müşteri yönetimi konularında deneyim sahibiyim.</p>
+      <p>
+        Yazılım alanında kendini geliştirmeye odaklı, analitik düşünen ve disiplinli biriyim. 
+        Teknik bilgi ile operasyonel deneyimi birleştirerek değer üretmeyi hedefliyorum.
+      </p>
+    </div>
+  </section>
+
+  <section id="projeler" class="cards">
+    <div class="card">
+      <h3>🚀 Proje 1</h3>
+      <p>Unity ile geliştirdiğim bir oyun projesi.</p>
     </div>
 
     <div class="card">
-      <h3>💼 Deneyim</h3>
-      <p>E-ticaret sektöründe kargo süreçleri, iade yönetimi ve müşteri hizmetleri alanlarında aktif olarak çalıştım.</p>
-    </div>
-
-    <div class="card">
-      <h3>🛠️ Yetenekler</h3>
-      <p>C#, Unity, temel web geliştirme, organizasyon ve operasyon yönetimi.</p>
-    </div>
-
-    <div class="card">
-      <h3>🎯 Kariyer Hedefi</h3>
-      <p>Yazılım ve dijital içerik üretimi alanında kendimi geliştirerek kendi projelerimi hayata geçirmek.</p>
+      <h3>🌐 Proje 2</h3>
+      <p>HTML/CSS ile yaptığım kişisel web sitesi.</p>
     </div>
   </section>
 
   <section id="iletisim" class="cards">
     <div class="card">
       <h3>📬 İletişim</h3>
-      <p><strong>Mail:</strong> <a href="mailto:eyupnart@icloud.com" style="color:#00d4ff; text-decoration:none;">eyupnart@icloud.com</a></p>
-      <p><strong>Instagram:</strong> <a href="https://instagram.com/nartiverson" target="_blank" style="color:#00d4ff; text-decoration:none;">@nartiverson</a></p>
+      <p><strong>Mail:</strong> <a href="mailto:eyupnart@icloud.com">eyupnart@icloud.com</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/nartiverson" target="_blank">@nartiverson</a></p>
     </div>
   </section>
 
